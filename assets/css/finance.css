@@ -219,9 +219,12 @@ p {
     transition: 0.3s all;
 }
 
-.c-qa__btn:hover, .c-qa__btn:focus {
-    text-decoration: none;
+.c-qa__btn:hover {
     background-color: #F7F9FC;
+    text-decoration: none;
+}
+.c-qa__btn:focus {
+    text-decoration: none;
 }
 
 .collapsed {
