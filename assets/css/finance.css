@@ -18,8 +18,26 @@
     padding: calc(var(--padding) * 2) 0;
 }
 
+.h1 {
+    font-size: 30px;
+}
+
+.h2 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+}
+
 /* INTRO SECTION */
 
+.intro__title {
+    margin: 0;
+    color: var(--blue);
+    font-size: 50px;
+    font-weight: bold;
+}
 
 /* TEXT AND IMAGE SECTION */
 
@@ -110,9 +128,15 @@
     background-color: #fff;
     border-radius: 4px;
     padding: 60px 50px;
-    height: 100%;
     margin-bottom: 2px;
 }
+
+@media (min-width: 768px) {  
+    .c-options-card {
+        height: 100%;
+    }
+}
+
 
 .c-options-card__ul {
     /* list-style-image: url(''); */
@@ -121,6 +145,7 @@
 
 .c-options-card__li {
     margin-bottom: 20px;
+    font-size: 18px;
 }
 .c-options-card__li:last-child {
     margin-bottom: 0;
@@ -131,6 +156,7 @@
 .c-options-table {
     margin-top: calc(var(--padding) / 2);
     margin-bottom: 0;
+    font-size: 18px;
 }
 .c-options-table td, .c-options-table th, .c-options-table thead th {
     border: none;
@@ -145,3 +171,89 @@
 }
 
 
+
+/* QUESTION AND ANSWERS SECTION */
+
+.c-qa__accordion {
+    margin-top: var(--padding);
+}
+
+.c-qa__card {
+    background: none;
+    border: 2px solid #fff;
+}
+
+.card-header, .c-qa__card-header {
+    background-color: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0;
+}
+.card-header:first-child {
+    border-radius: 0;
+}
+
+.c-qa__card-body {
+    background-color: #F7F9FC;
+    border: none;
+}
+
+.c-qa__card-body p {
+    margin-bottom: 0;
+}
+
+.c-qa__padding {
+    padding: 25px 35px;
+}
+.c-qa__padding--t0 {
+    padding-top: 0;
+}
+
+.c-qa__btn {
+    width: 100%;
+    text-align: left;
+    background-color: #F7F9FC;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.3s all;
+}
+
+.c-qa__btn:hover, .c-qa__btn:focus {
+    text-decoration: none;
+    background-color: #F7F9FC;
+}
+
+.collapsed {
+    /* background-color: #e1eaf4; */
+    background-color: #e1eaf4;
+}
+.collapsed:hover {
+    /* background-color: #e1eaf4; */
+    background-color: #e1eaf4;
+}
+
+/* .collapsed {
+    background: red;
+} */
+
+/* BREAK POINTS */
+/* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) {  
+ 
+} */
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* @media (min-width: 768px) {  
+ 
+} */
+ 
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { 
+ 
+} */
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {  
+    
+} */
