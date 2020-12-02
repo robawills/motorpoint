@@ -5,7 +5,7 @@
     --padding: 70px;
     --orange: #e84910;
     --blue: #004996;
-    --off-white: #e3e9ec;
+    --off-white: #f5f7f8;
     --green: #0cb4bd;
     --light-gray: #e3e9ec;
 }
@@ -28,6 +28,19 @@
 
 p {
     font-size: 18px;
+}
+
+.c-list {
+    /* list-style-image: url(''); */
+    padding-left: 1.25rem;
+}
+
+.c-list__list-item {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.c-list__list-item:last-child {
+    margin-bottom: 0;
 }
 
 /* INTRO SECTION */
@@ -135,20 +148,6 @@ p {
     .c-options-card {
         height: 100%;
     }
-}
-
-
-.c-options-card__ul {
-    /* list-style-image: url(''); */
-    padding-left: 1.25rem;
-}
-
-.c-options-card__li {
-    margin-bottom: 20px;
-    font-size: 18px;
-}
-.c-options-card__li:last-child {
-    margin-bottom: 0;
 }
 
 /* OPTIONS TABLE */
