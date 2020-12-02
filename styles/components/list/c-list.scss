@@ -1,0 +1,8 @@
+.c-list {
+    padding-left: 20px;
+    margin-left: 0;
+
+    &__item {
+        padding-bottom: var(--padding-xs);
+    }
+}

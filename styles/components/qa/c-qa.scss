@@ -1,6 +1,10 @@
 .c-qa {
     &__accordion {
-        margin-top: var(--padding);
+        margin: var(--padding-sm) 0;
+        width: 100%;
+        @media (min-width: 768px) {
+            margin: var(--padding) 0  var(--padding-sm);
+        }
     }
 
     &__card {
@@ -13,6 +17,7 @@
         border: none;
         border-radius: 4px;
         padding: 0;
+        width: 100%;
     }
 
     &__card-body {
@@ -34,15 +39,24 @@
         width: 100%;
         text-align: left;
         background-color: #F7F9FC;
-        color: var(--blue);
+        color: var(--dark-blue);
         font-weight: bold;
-        font-size: 25px;
+        font-size: 9px;
         transition: 0.3s all;
+        
+        display: flex;
+        flex-wrap: wrap;
+
         &:hover, &:focus {
             text-decoration: none;
+            color: var(--dark-blue);
+            background-color: lighten(#F7F9FC, 50%);
         }
         &:hover {
             background-color: #F7F9FC;
+        }
+        @media (min-width: 768px) {
+            font-size: 25px;
         }
     }
 

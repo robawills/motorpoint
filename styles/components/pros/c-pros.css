@@ -1,1 +1,1 @@
-.c-pros__oval{width:174px;height:174px;margin:7px 147px 50px 130px;padding:48px 54px;background-color:var(--green);border-radius:50%;margin:0 auto 50px}.c-pros__oval__title{font-size:25px;margin-bottom:25px}
+.c-pros__oval{width:80px;height:80px;background-color:var(--green);border-radius:50%;margin:0 auto 25px}@media(min-width: 768px){.c-pros__oval{margin:0 auto 50px;padding:48px 54px;width:174px;height:174px}}.c-pros__item{margin-bottom:var(--padding-sm)}.c-pros__item:last-child{margin-bottom:0}@media(min-width: 768px){.c-pros__item{margin-bottom:0}}

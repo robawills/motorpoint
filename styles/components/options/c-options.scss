@@ -3,29 +3,6 @@
     &__intro {
         padding-bottom: var(--padding);
     }
-    &__a-underline {
-        color: var(--orange);
-        width: 100%;
-        position: relative;
-        &::before {
-            content:" ";
-            display:block;
-            position:absolute;
-            height: 1px;
-            bottom:0;
-            width:100%;
-            left:0;
-            transition:all 0.5s;
-            background-color: var(--orange);
-        }
-        &:hover {
-            text-decoration: none;
-            color: var(--orange);
-            &::before {
-                width:0;
-            }
-        }
-    }
     &__terms {
         margin: calc(var(--padding) / 2) 0;
         font-size: 15px;
