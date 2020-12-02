@@ -2,7 +2,23 @@
     padding-left: 20px;
     margin-left: 0;
 
+    &--inline {
+        list-style: none;
+        padding: 0;
+    }
+
     &__item {
         padding-bottom: var(--padding-xs);
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        &--inline {
+            display: inline-block;
+        }
+    }
+
+    &__a {
+        color: #fff;
     }
 }

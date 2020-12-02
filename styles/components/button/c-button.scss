@@ -1,0 +1,24 @@
+.c-button {
+    padding: 13px var(--padding-sm);
+    font-weight: bold;
+    color: var(--gray);
+    transition: 0.3s all;
+
+    &--red {
+        background-color: var(--red);
+        color: #fff;
+        &:hover {
+            filter: brightness(110%);
+        }
+    }
+    &--white {
+        width: 100%;
+        margin-bottom: var(--padding-xs);
+        background-color: #fff;
+        text-align: center;
+        padding: 13px 0;
+        &:hover {
+            background-color: var(--light-gray);
+        }
+    } 
+}

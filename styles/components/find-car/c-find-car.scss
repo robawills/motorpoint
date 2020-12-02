@@ -1,0 +1,17 @@
+.c-find-car {
+    margin-top: 200px;
+    background-color: #0cb4bd;
+    &__title {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+        color: #fff;
+        @media (min-width: 768px) {
+            font-size: 70px;
+            line-height: 70px;
+        }
+    }
+    &__buttons {
+        padding-top: var(--padding);
+    }
+}
