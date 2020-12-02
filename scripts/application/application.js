@@ -10,15 +10,15 @@
 
 /* Imports */
 
-import NeueKit from '@neuekit/neuekit/src/scripts/neuekit';
-import * as util from './modules/utilities';
+// import NeueKit from '@neuekit/neuekit/src/scripts/neuekit';
+// import * as util from './modules/utilities';
 
 
 /* Neue Kit */
 
-const neuekit = new NeueKit();
+// const neuekit = new NeueKit();
 
-window.neuekit = neuekit;
+// window.neuekit = neuekit;
 /* Project Code */
 
 

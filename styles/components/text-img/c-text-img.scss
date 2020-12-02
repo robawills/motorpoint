@@ -4,15 +4,19 @@
         height: 30rem;
         width: 100%;
         background-color: aquamarine;
-    }
-    &__img::before {
-        content: '';
-        position: absolute;
-        height: calc(100% + var(--offset) * 2);
-        width: 100vw;
-        background: var(--off-white);
-        z-index: -1;
-        top: calc(0px - var(--offset) );
-        right: var(--offset);
+
+        @media (min-width: 768px) {
+            &::before {
+                content: '';
+                position: absolute;
+                height: calc(100% + var(--offset) * 2);
+                width: 100vw;
+                background: var(--off-white);
+                z-index: -1;
+                top: calc(0px - var(--offset) );
+                right: var(--offset);
+        
+            }
+        }
     }
 }
