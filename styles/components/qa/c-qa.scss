@@ -41,16 +41,20 @@
         background-color: #F7F9FC;
         color: var(--dark-blue);
         font-weight: bold;
-        font-size: 9px;
+        font-size: 20px;
         transition: 0.3s all;
-        
+        border: none;
+
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
         &:hover, &:focus {
             text-decoration: none;
             color: var(--dark-blue);
-            background-color: lighten(#F7F9FC, 50%);
+            border: none;
+            outline: none;
         }
         &:hover {
             background-color: #F7F9FC;
@@ -60,10 +64,39 @@
         }
     }
 
+    &__title {
+        width: 80%;
+    }
+
+    &__open {
+        position: relative;
+    }
+
+    &__line {
+        width: 14px;
+        height: 2px;
+        background-color: #646e87;
+        &::before {
+            content: '';
+            width: 14px;
+            height: 2px;
+            transform: rotate(0deg);
+            background-color: #646e87;
+            position: absolute;
+            top: 0;
+            transition: 0.2s all;
+        }
+    }
+
     .collapsed {
         background-color: #e1eaf4;
         &:hover {
             background-color: inherit;
+        }
+        .c-qa__line {
+            &::before {
+                transform: rotate(90deg);
+            }
         }
     }
 }
