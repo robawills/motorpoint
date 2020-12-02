@@ -1,0 +1,26 @@
+/* TEAM */
+
+Name: Matt Pilott
+Title: Front-end Engineer
+Github: @matt3224
+Twitter: @LittleDotMatt
+
+Name: Darby Manning
+Title: Front-end Engineer
+Github: @darbymanning
+Twitter: @LittleDotDarby
+
+Name: Chris Myers
+Title: Front-end Engineer
+Github: @CreativeLittleChris
+Twitter: @LittleDotChris
+
+
+
+/* THANKS */
+
+Name: Harry Roberts
+For: ITCSS
+Twitter: @csswizardry
+
+
