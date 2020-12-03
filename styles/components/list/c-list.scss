@@ -72,9 +72,10 @@
         line-height: 16px;
         transition: all 0.3s;
 
-        &:hover {
+        &:hover, &:focus {
             text-decoration: none;
             color: var(--light-gray);
+            outline: none;
         }
 
         @media (min-width: 768px) {
