@@ -4,10 +4,15 @@
     color: var(--gray);
     transition: 0.3s all;
 
+    &:hover, &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
     &--red {
         background-color: var(--red);
         color: #fff;
-        &:hover {
+        &:hover, &:focus {
             filter: brightness(110%);
         }
     }
@@ -17,8 +22,8 @@
         background-color: #fff;
         text-align: center;
         padding: 13px 0;
-        &:hover {
-            background-color: var(--light-gray);
+        &:hover, &:focus {
+            filter: brightness(90%);
         }
     } 
 }

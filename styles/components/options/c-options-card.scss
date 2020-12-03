@@ -1,8 +1,10 @@
 .c-options-card {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.94);
     border-radius: 4px;
     padding: 20px 25px;
     margin-bottom: 2px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 
     @media (min-width: 768px) {
         height: 100%;

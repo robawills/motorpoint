@@ -1,5 +1,15 @@
 .c-options {
+    position: relative;
     background: var(--light-gray);
+
+    &__bg-img {
+        width: 731px;
+        height: 855px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
     &__intro {
         padding-bottom: var(--padding);
     }

@@ -25,11 +25,11 @@
 
 
     <!--  Icon Links  -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <!--  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
     <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#000000">
-    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <link rel="shortcut icon" href="images/icons/favicon.ico"> -->
 
     <!--  Web Manifest  -->
     <link rel="manifest" href="images/icons/site.webmanifest">
@@ -40,8 +40,8 @@
     <link rel="stylesheet" href="styles/style.css">
 
     <!--  Subservient Resources  -->
-    <script src="scripts/polyfills/polyfills.min.js" defer></script>
-    <script src="scripts/application/application.min.js" defer></script>
+    <!--  <script src="scripts/polyfills/polyfills.min.js" defer></script>
+    <script src="scripts/application/application.min.js" defer></script> -->
 
 </head>
 
@@ -63,7 +63,7 @@
       <div class="row  align-items-center">
         <div class="col-md-6  col-md-6  col-lg-7  order-md-2  c-img-text__img-container">
             <figure class="c-img-text__img">
-
+              <img src="./images/introduction-image.jpg" srcset="./images/introduction-image@2x.jpg 2x, ./images/introduction-image@3x.jpg 3x" width="693" height="538">
             </figure>
         </div>
         <div class="col-md-6  col-lg-5  order-md-1  c-img-text__text">
@@ -100,6 +100,9 @@
   </section>
 
   <section class="c-options  section  section--lg">
+    <div class="c-options__bg-img">
+      <img src="./images/red-circle.svg" width="731" height="855">
+    </div>
     <div class="container">
       <div class="row  justify-content-center">
         <div class="col-md-6  text-center  c-options__intro">
@@ -172,90 +175,90 @@
     </div>
   </section>
 
-  <section class="c-qa  section  section--lg">
+  <section class="c-question-answer  section  section--lg">
     <div class="container">
       <div class="row">
         <div class="col">
-          
+
           <h1 class="h2  light">Your car finance questions answered</h1>
 
-          <div class="accordion  c-qa__accordion" id="accordionExample">
+          <div class="accordion  c-question-answer__accordion" id="accordionExample">
             
-            <div class="card  c-qa__card">
-              <div class="card-header  c-qa__card-header" id="headingOne">
-                  <button class="btn-link  c-qa__btn  c-qa__padding  collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    <div class="c-qa__title">How can I calculate my finance options?</div>
-                    <div class="c-qa__open">
-                      <div class="c-qa__line"></div>
+            <div class="card  c-question-answer__card">
+              <div class="card-header  c-question-answer__card-header" id="headingOne">
+                  <button class="btn-link  c-question-answer__btn  c-question-answer__padding  collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <div class="c-question-answer__title">How can I calculate my finance options?</div>
+                    <div class="c-question-answer__open">
+                      <div class="c-question-answer__line"></div>
                     </div>
                   </button>
               </div>
               <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body  c-qa__card-body  c-qa__padding  c-qa__padding--t0">
+                <div class="card-body  c-question-answer__card-body  c-question-answer__padding  c-question-answer__padding--t0">
                   <p>We have a finance calculator on every car advert page. This will allow you to explore your repayment options for that car based on differing deposit amounts and repayment periods.</p>
                 </div>
               </div>
             </div>
 
-            <div class="card  c-qa__card">
-              <div class="card-header  c-qa__card-header" id="headingTwo">
-                  <button class="btn-link  c-qa__btn  c-qa__padding  collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="c-qa__title">How can I apply for finance?</div>
-                    <div class="c-qa__open">
-                      <div class="c-qa__line"></div>
+            <div class="card  c-question-answer__card">
+              <div class="card-header  c-question-answer__card-header" id="headingTwo">
+                  <button class="btn-link  c-question-answer__btn  c-question-answer__padding  collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="c-question-answer__title">How can I apply for finance?</div>
+                    <div class="c-question-answer__open">
+                      <div class="c-question-answer__line"></div>
                     </div>
                   </button>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body  c-qa__card-body  c-qa__padding  c-qa__padding--t0">
+                <div class="card-body  c-question-answer__card-body  c-question-answer__padding  c-question-answer__padding--t0">
                   <p>You can apply for finance either in-store or over the phone. Our teams will help you create a plan that meets your needs, answer any questions about any options you may have, and then complete the application for you.</p>
                 </div>
               </div>
             </div>
 
-            <div class="card  c-qa__card">
-              <div class="card-header  c-qa__card-header" id="headingThree">
-                  <button class="btn-link  c-qa__btn  c-qa__padding  collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <div class="c-qa__title">What information do you require when applying for finance?</div>
-                    <div class="c-qa__open">
-                      <div class="c-qa__line"></div>
+            <div class="card  c-question-answer__card">
+              <div class="card-header  c-question-answer__card-header" id="headingThree">
+                  <button class="btn-link  c-question-answer__btn  c-question-answer__padding  collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="c-question-answer__title">What information do you require when applying for finance?</div>
+                    <div class="c-question-answer__open">
+                      <div class="c-question-answer__line"></div>
                     </div>
                   </button>
               </div>
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body  c-qa__card-body  c-qa__padding  c-qa__padding--t0">
+                <div class="card-body  c-question-answer__card-body  c-question-answer__padding  c-question-answer__padding--t0">
                   <p>When you apply, we will require employment details, three years' address history, bank account details and a copy of your driving licence.</p>
                 </div>
               </div>
             </div>
             
-            <div class="card  c-qa__card">
-              <div class="card-header  c-qa__card-header" id="headingFour">
-                  <button class="btn-link  c-qa__padding  c-qa__btn  collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    <div class="c-qa__title">How long does it take to get a decision on finance?</div>
-                    <div class="c-qa__open">
-                      <div class="c-qa__line"></div>
+            <div class="card  c-question-answer__card">
+              <div class="card-header  c-question-answer__card-header" id="headingFour">
+                  <button class="btn-link  c-question-answer__padding  c-question-answer__btn  collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <div class="c-question-answer__title">How long does it take to get a decision on finance?</div>
+                    <div class="c-question-answer__open">
+                      <div class="c-question-answer__line"></div>
                     </div>
                   </button>
               </div>
               <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                <div class="card-body  c-qa__card-body  c-qa__padding  c-qa__padding--t0">
+                <div class="card-body  c-question-answer__card-body  c-question-answer__padding  c-question-answer__padding--t0">
                   <p>The decision is normally instant once the proposal has been received by one of Motorpoint’s finance partners.</p>
                 </div>
               </div>
             </div>
 
-            <div class="card  c-qa__card">
-              <div class="card-header  c-qa__card-header" id="headingFive">
-                  <button class="btn-link  c-qa__btn  c-qa__padding  collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    <div class="c-qa__title">Can I settle my finance early?</div>
-                    <div class="c-qa__open">
-                      <div class="c-qa__line"></div>
+            <div class="card  c-question-answer__card">
+              <div class="card-header  c-question-answer__card-header" id="headingFive">
+                  <button class="btn-link  c-question-answer__btn  c-question-answer__padding  collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <div class="c-question-answer__title">Can I settle my finance early?</div>
+                    <div class="c-question-answer__open">
+                      <div class="c-question-answer__line"></div>
                     </div>
                   </button>
               </div>
               <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                <div class="card-body  c-qa__card-body  c-qa__padding  c-qa__padding--t0">
+                <div class="card-body  c-question-answer__card-body  c-question-answer__padding  c-question-answer__padding--t0">
                   <p>You can settle your account at any time on both Hire Purchase (HP) and Personal Contract Purchase (PCP) agreements.</p>
                 </div>
               </div>
@@ -275,7 +278,7 @@
       <div class="row  align-items-center">
         <div class="col-md-6  col-md-6  col-lg-7">
             <figure class="c-img-text__img  c-img-text__img--right">
-
+              <img src="./images/motorpoinr-asset-protection.jpg" srcset="./images/motorpoinr-asset-protection@2x.jpg 2x, ./images/motorpoinr-asset-protection@3x.jpg 3x" width="693" height="538" alt="motorpoinr-asset-protection">
             </figure>
         </div>
         <div class="col-md-6  col-lg-5  c-img-text__text">
@@ -301,6 +304,9 @@
           <h1 class="c-find-car__title">Find your car on finance that fits your budget</h1>
         </div>
         <div class="col-md-6">
+          <figure>
+            <img src="./images/car-with-shadow.png" srcset="./images/car-with-shadow@2x.png 2x, ./images/car-with-shadow@3x.png 3x"  alt="car-with-shadow"  width="589" height="289">
+          </figure>
         </div>
       </div>
       <div class="row  c-find-car__buttons">

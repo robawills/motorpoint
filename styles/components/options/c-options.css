@@ -1,1 +1,1 @@
-.c-options{background:var(--light-gray)}.c-options__intro{padding-bottom:var(--padding)}.c-options__terms{margin:calc(var(--padding) / 2) 0;font-size:15px}.c-options__small{margin:0;font-size:13px}
+.c-options{position:relative;background:var(--light-gray)}.c-options__bg-img{width:731px;height:855px;position:absolute;bottom:0;right:0}.c-options__intro{padding-bottom:var(--padding)}.c-options__terms{margin:calc(var(--padding) / 2) 0;font-size:15px}.c-options__small{margin:0;font-size:13px}
