@@ -45,8 +45,12 @@
     }
 
     &__black-horse {
-        width: 276px;
-        height: 56px;
+        width: 222px;
+        height: 45px;
+        @media (min-width: 768px) {
+            width: 276px;
+            height: 56px;
+        }
     }
     
 
