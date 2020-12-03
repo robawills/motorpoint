@@ -13,14 +13,40 @@
     }
 
     &__text {
-        padding: 40px var(--padding-xs);
+        padding-top: 40px;
+        padding-bottom: 40px;
         background-color: var(--off-white);
+
+        @media (min-width: 768px) {
+
+            padding-right: calc(var(--padding-xs) * 3);
+
+            &--right {
+                padding-right: 0;
+                padding-left: calc(var(--padding-xs) * 3);
+            }
+        }
+        
     }
 
     @media (max-width: 760px) {
         &__img-container {
             padding: 0;
         }
+    }
+
+    &__title-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__title-icon {
+        margin-right: var(--padding-xs);
+    }
+
+    &__black-horse {
+        width: 276px;
+        height: 56px;
     }
     
 

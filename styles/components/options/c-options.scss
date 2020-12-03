@@ -1,6 +1,7 @@
 .c-options {
     position: relative;
     background: var(--light-gray);
+    overflow: hidden;
 
     &__bg-img {
         width: 731px;
@@ -8,6 +9,7 @@
         position: absolute;
         bottom: 0;
         right: 0;
+        // right: -400px;
     }
 
     &__intro {
@@ -16,9 +18,11 @@
     &__terms {
         margin: calc(var(--padding) / 2) 0;
         font-size: 15px;
+        line-height: 20px;
     }
     &__small {
         margin: 0;
         font-size: 13px;
+        line-height: 20px;
     }
 }
