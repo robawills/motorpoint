@@ -9,7 +9,19 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        // right: -400px;
+        
+        @media (min-width: 768px) { 
+            right: -400px;
+        }
+
+        @media (min-width: 1200px) { 
+            right: -250px;
+        }
+
+        @media (min-width: 1564px) { 
+            right: 0;
+        }
+
     }
 
     &__intro {

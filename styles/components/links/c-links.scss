@@ -1,0 +1,25 @@
+.c-link-underline {
+    color: var(--orange);
+    width: 100%;
+    position: relative;
+
+    &::before {
+        content:" ";
+        display:block;
+        position:absolute;
+        height: 1px;
+        bottom:0;
+        width:100%;
+        left:0;
+        transition:all 0.5s;
+        background-color: var(--orange);
+    }
+    &:hover, &:focus {
+        text-decoration: none;
+        color: var(--orange);
+        outline: none;
+        &::before {
+            width:0;
+        }
+    }
+}

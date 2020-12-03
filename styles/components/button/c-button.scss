@@ -3,6 +3,11 @@
     font-weight: bold;
     color: var(--gray);
     transition: 0.3s all;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: auto;
+    }
 
     &:hover, &:focus {
         outline: none;
