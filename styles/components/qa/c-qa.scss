@@ -56,9 +56,6 @@
             border: none;
             outline: none;
         }
-        &:hover {
-            background-color: #F7F9FC;
-        }
         @media (min-width: 768px) {
             font-size: 25px;
         }
@@ -90,8 +87,8 @@
 
     .collapsed {
         background-color: #e1eaf4;
-        &:hover {
-            background-color: inherit;
+        &:hover, &:focus {
+            background-color: #F7F9FC;
         }
         .c-qa__line {
             &::before {

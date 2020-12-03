@@ -1,5 +1,7 @@
 .c-img-text {
     
+    overflow: hidden;
+
     @media (max-width: 768px) {
         &__no-gutter {
             padding: 0;
@@ -14,12 +16,20 @@
         padding: 40px var(--padding-xs);
         background-color: var(--off-white);
     }
+
+    @media (max-width: 760px) {
+        &__img-container {
+            padding: 0;
+        }
+    }
+    
     
 
     &__img {
         height: 30rem;
         width: 100%;
         background-color: aquamarine;
+        margin: 0;
 
         @media (min-width: 768px) {
             &::before {
