@@ -58,7 +58,9 @@
             color: var(--dark-blue);
             border: none;
             outline: none;
+            cursor: pointer;
         }
+        
         @media (min-width: 1025px) {
             font-size: 25px;
         }
