@@ -3,9 +3,13 @@
     padding: 0;
 }
 
+.page-body {
+    padding-bottom: 0 !important;
+}
+
 .container {
 
-    max-width: 1368px;
+    max-width: 1240px;
 
     &--lg {
         @media (min-width: 768px) {
