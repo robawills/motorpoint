@@ -31,7 +31,7 @@
 
     &__padding {
         padding: 20px 25px;
-        @media (min-width: 768px) {
+        @media (min-width: 1025px) {
             padding: 25px 35px;
         }
         &--t0 {
@@ -48,7 +48,6 @@
         font-size: 20px;
         transition: 0.3s all;
         border: none;
-
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -60,7 +59,7 @@
             border: none;
             outline: none;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 1025px) {
             font-size: 25px;
         }
     }
@@ -91,7 +90,7 @@
 
     .collapsed {
         background-color: #e1eaf4;
-        &:hover, &:focus {
+        &:hover {
             background-color: #F7F9FC;
         }
         .c-question-answer__line {

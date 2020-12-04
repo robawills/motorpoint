@@ -1,6 +1,9 @@
 .c-find-car {
     background-color: #0cb4bd;
     @media (min-width: 768px) {
+        margin-top: 100px;
+    }
+    @media (min-width: 1025px) {
         margin-top: 200px;
     }
     &__title {
@@ -9,13 +12,17 @@
         line-height: 35px;
         color: #fff;
         padding-bottom: var(--padding-sm);
-        padding-right: var(--padding-sm);
 
         @media (min-width: 768px) {
+            font-size: 55px;
+            line-height: 60px;
+        }
+
+        @media (min-width: 1025px) {
             font-size: 70px;
             line-height: 70px;
-            padding-right: 0;
         }
+
     }
     &__buttons {
         padding-top: var(--padding);

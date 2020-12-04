@@ -2,7 +2,10 @@ p {
     font-size: 17px;
     line-height: 30px;
     margin-bottom: var(--padding-sm);
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
+        margin-bottom: var(--padding-xs);
+    }
+    @media (min-width: 1025px) {
         font-size: 18px; 
     }
 }
@@ -10,12 +13,18 @@ p {
 .h1 {
     font-size: 30px;
     margin-bottom: var(--padding-sm);
+    @media (min-width: 768px) {
+        margin-bottom: var(--padding-xs);
+    }
+    @media (min-width: 1025px) {
+        margin-bottom: var(--padding-sm);
+    }
 }
 
 .h2 {
     font-size: 25px;
     margin-bottom: 20px;
-    @media (min-width: 768px) {
+    @media (min-width: 1025px) {
         margin-bottom: 25px;
     }
 }

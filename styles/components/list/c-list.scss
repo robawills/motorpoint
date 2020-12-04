@@ -52,7 +52,12 @@
 
             &:nth-child(even) {
                 border-left: 2px solid #fff;
+                
                 @media (min-width: 768px) {
+                    border-right: 2px solid #fff;
+                }
+
+                @media (min-width: 1025px) {
                     border-left: 4px solid #fff;
                     border-right: 4px solid #fff;
                 }
@@ -82,7 +87,7 @@
             outline: none;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 1025px) {
             font-size: 22px;
             line-height: 22px;
         }
