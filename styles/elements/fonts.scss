@@ -25,6 +25,8 @@ p {
     font-size: 25px;
     margin-bottom: 20px;
     font-weight: 700 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 
     @media (min-width: 1025px) {
         margin-bottom: 25px;
