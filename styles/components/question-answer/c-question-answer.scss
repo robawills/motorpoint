@@ -72,13 +72,7 @@
 
     &__open {
         position: relative;
-    }
-
-    &__line {
-        width: 14px;
-        height: 2px;
-        background-color: #646e87;
-        &::before {
+        &::before, &::after {
             content: '';
             width: 14px;
             height: 2px;
@@ -90,12 +84,13 @@
         }
     }
 
+
     .collapsed {
         background-color: #e1eaf4;
         &:hover {
             background-color: #F7F9FC;
         }
-        .c-question-answer__line {
+        .c-question-answer__open {
             &::before {
                 transform: rotate(90deg);
             }
