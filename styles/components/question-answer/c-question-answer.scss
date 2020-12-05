@@ -56,11 +56,15 @@
         padding-right: var(--padding);
 
         &:hover, &:focus {
+            
             text-decoration: none;
             color: var(--dark-blue);
             border: none;
             outline: none;
             cursor: pointer;
+        }
+        &:hover {
+            background-color: #F7F9FC;
         }
         
         @media (min-width: 1025px) {
