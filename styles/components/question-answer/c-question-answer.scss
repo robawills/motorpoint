@@ -46,6 +46,7 @@
         color: var(--dark-blue);
         font-weight: bold;
         font-size: 20px;
+        line-height: 30px;
         transition: 0.3s all;
         border: none;
         position: relative;
@@ -64,6 +65,7 @@
         
         @media (min-width: 1025px) {
             font-size: 25px;
+            line-height: 35px;
         }
     }
 
