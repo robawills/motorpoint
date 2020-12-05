@@ -24,6 +24,8 @@ p {
 .h2 {
     font-size: 25px;
     margin-bottom: 20px;
+    font-family: Graphik Web,arial,sans serif;
+
     @media (min-width: 1025px) {
         margin-bottom: 25px;
     }
@@ -35,8 +37,4 @@ p {
 
 .light {
     font-weight: normal;
-}
-
-.graphik {
-    font-family: Graphik Web,arial,sans serif;
 }
