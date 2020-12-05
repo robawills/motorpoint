@@ -12,13 +12,6 @@
         }
     }
 
-    &--last-pb0 {
-        margin-bottom: 0;
-        .c-list__item:last-child {
-            padding-bottom: 0;
-        }
-    }
-
     &__item {
         padding-bottom: var(--padding-xs);
         list-style: none;
@@ -97,4 +90,11 @@
     padding-left: 0;
     margin-left: 0;
     margin-bottom: var(--padding-xs);
+}
+
+.c-list--last-pb0.unstyled {
+    margin-bottom: 0;
+    .c-list__item:last-child {
+        padding-bottom: 0;
+    }
 }
