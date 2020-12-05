@@ -7,10 +7,9 @@
         margin-top: 200px;
     }
     &__title {
-        font-weight: 700;
-        font-family: Graphik Web,arial,sans serif;
         font-size: 30px;
         line-height: 35px;
+        font-weight: 700 !important;
         color: #fff;
         padding-bottom: var(--padding-sm);
 
@@ -21,7 +20,7 @@
 
         @media (min-width: 1025px) {
             font-size: 70px;
-            line-height: 70px;
+            line-height: 75px;
         }
 
     }
