@@ -1,6 +1,4 @@
 .c-list {
-    padding-left: 0;
-    margin-left: 0;
 
     &--inline.unstyled {
         list-style: none;
@@ -93,4 +91,9 @@
             line-height: 22px;
         }
     }
+}
+
+.c-list.unstyled {
+    padding-left: 0;
+    margin-left: 0;
 }
