@@ -64,10 +64,13 @@
 
     &__a {
         color: #fff;
-        font-weight: bold;
         font-size: 16px;
         line-height: 16px;
         transition: all 0.3s;
+        font-family: Graphik Bold Web,Graphik Web,arial,sans serif;
+        font-weight: 700;
+        font-style: normal;
+        font-stretch: normal;
 
         &:hover {
             text-decoration: none;
