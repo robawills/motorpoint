@@ -99,7 +99,7 @@
 
     .collapsed {
         background-color: #e1eaf4;
-        &:hover {
+        &:hover, &:focus-visible {
             background-color: #F7F9FC;
         }
     }
