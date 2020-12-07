@@ -36,7 +36,7 @@
       <div class="row  align-items-center">
         <div class="col-md-6  col-md-6  col-lg-7  order-md-2  c-img-text__img-container">
             <figure class="c-img-text__img">
-              <img src="https://motorpoint.rawills.co.uk/images/introduction-image.jpg" srcset="https://motorpoint.rawills.co.uk/images/introduction-image@2x.jpg 2x, https://motorpoint.rawills.co.uk/images/introduction-image@3x.jpg 3x" width="693" height="538"/>
+              <img class="slide-in" src="https://motorpoint.rawills.co.uk/images/introduction-image.jpg" srcset="https://motorpoint.rawills.co.uk/images/introduction-image@2x.jpg 2x, https://motorpoint.rawills.co.uk/images/introduction-image@3x.jpg 3x" width="693" height="538"/>
             </figure>
         </div>
         <div class="col-md-6  col-lg-5  order-md-1  c-img-text__text">
@@ -335,6 +335,44 @@
         // Append link element to HTML head 
         head.appendChild(link);  
     </script>  
+    
+    <script>
+    function debounce(func, wait = 20, immediate = true) {
+      var timeout;
+      return function() {
+        var context = this, args = arguments;
+        var later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+      };
+    };
+
+    const sliderImages = document.querySelectorAll('.slide-in');
+
+    function checkSlide() {
+      sliderImages.forEach(sliderImage => {
+        // half way through the image
+        const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
+        // bottom of the image
+        const imageBottom = sliderImage.offsetTop + sliderImage.height;
+        const isHalfShown = slideInAt > sliderImage.offsetTop;
+        const isNotScrolledPast = window.scrollY < imageBottom;
+        if (isHalfShown && isNotScrolledPast) {
+          sliderImage.classList.add('active');
+        } else {
+          sliderImage.classList.remove('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', debounce(checkSlide));
+
+  </script>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
