@@ -25,7 +25,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css">
+    <!--<link rel="stylesheet" href="styles/style.css">-->
 
 </head>
 
@@ -334,35 +334,23 @@
 </div>
 
 <script>
-  var animateHTML = function() {
-    var elems,
-        windowHeight
-    
-    var init = function() {
-      elems = document.getElementsByClassName("c-ani-in");
-      windowHeight = window.innerHeight;
-      _addEventHandlers();
-    }
-    
-    var _addEventHandlers = function() {
-        window.addEventListener("scroll", _checkPosition);
-        window.addEventListener("resize", init)
-    }
-    var _checkPosition = function() {
-      for ( var i = 0; i < elems.length; i++ ) {
-        var posFromTop = elems[i].getBoundingClientRect().top;
-        if ( posFromTop - windowHeight <= 0) { 
-          elems[i].className = elems[i].className.replace( "c-ani-in", "c-img-animate--left" );
-        }
-      }    
-    }
-    
-    return {
-      init: init
-    }
-  }
+  // Get HTML head element 
+  var head = document.getElementsByTagName('HEAD')[0];  
 
-  animateHTML().init();
+  // Create new link Element 
+  var styles = document.createElement('link'); 
+
+  // set the attributes for link element  
+  styles.rel = 'stylesheet';  
+
+  styles.type = 'text/css'; 
+
+  styles.href = 'https://motorpoint.rawills.co.uk/styles/style.css';  
+
+  // Append link element to HTML head 
+  head.appendChild(styles); 
+
+  
 </script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
