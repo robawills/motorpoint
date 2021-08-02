@@ -1,0 +1,61 @@
+.c-hero {
+    background-color: #469AD6;
+    text-align: center;
+    color: #fff;
+
+    &__signpost {
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    &__titleOffSet {
+        margin-bottom: 20px;
+        transform: rotate(-1deg);
+
+        &--two {
+            transform: rotate(-3deg);
+        }
+    }
+
+    &__titleBlock {
+        display: inline;
+        padding: 20px 40px;
+        background-color: #FFC82E;
+        color: #000;
+        font-size: 70px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__corners {
+        &::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: chartreuse;
+            opacity: 0.5;
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: chartreuse;
+            opacity: 0.5;
+        }
+    }
+
+    &__description {
+        width: 80%;
+        margin: 100px auto 80px;
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
