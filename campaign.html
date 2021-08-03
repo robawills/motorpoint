@@ -26,6 +26,9 @@
 
     <!-- AOS animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
@@ -73,7 +76,7 @@
         </div>
         <div class="row  align-items-center">
           <div class="col">
-            <p class="h-pCenteredWhite">All cars are checked by experts and under warranty, with the option of Home Delivery or Same Day Driveaway. Our award-winning customer service team is available to help you find your perfect car, and what’s more we give you 14 days to make sure you love your new car or get your money back.</p>
+            <p class="h-pCenteredWhite" data-aos="fade-up" data-aos-once="true">All cars are checked by experts and under warranty, with the option of Home Delivery or Same Day Driveaway. Our award-winning customer service team is available to help you find your perfect car, and what’s more we give you 14 days to make sure you love your new car or get your money back.</p>
           </div>
         </div>
       </div>
@@ -82,9 +85,48 @@
     <!-- CAR SLIDER -->
 
     <section class="c-slider">
-      <div class="container  container--xlg">
+      <div class="container  container--lg">
         <div class="row  align-items-center">
-          <div class="c-slider__container"></div>
+          <div class="col">
+            <div class="c-slider__title">
+              <div class="c-slider__titleOffSet">
+                <h2 class="c-slider__titleBlock c-slider__titleBlock--topRightCorners">Holy wing-mirrors!</h2>
+              </div>
+              <div class="c-slider__titleOffSet  c-slider__titleOffSet--lineTwo">
+                <h2 class=" c-slider__titleBlock c-slider__titleBlock--lineTwo c-slider__titleBlock--bottomLeftCorners">There’s even more.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container  container--xlg">
+        <div class="c-slider__container">
+          <div class="owl-carousel c-slider__carousel" data-aos="fade-up" data-aos-once="true">
+            <div>
+              <article class="c-slider__slide c-slider__slide--rotate5">
+                <figure class="c-slider__slideImage"></figure>
+                <h1 class="c-slider__slideTitle">Premium</h1>
+              </article>
+            </div>
+            <div>
+              <article class="c-slider__slide c-slider__slide--rotate-4">
+                <figure class="c-slider__slideImage"></figure>
+                <h1 class="c-slider__slideTitle">Affordable</h1>
+              </article>
+            </div>
+            <div>
+              <article class="c-slider__slide c-slider__slide--rotate-2">
+                <figure class="c-slider__slideImage"></figure>
+                <h1 class="c-slider__slideTitle">Economical</h1>
+              </article>
+            </div>
+            <div>
+              <article class="c-slider__slide c-slider__slide--rotate4">
+                <figure class="c-slider__slideImage"></figure>
+                <h1 class="c-slider__slideTitle">Family</h1>
+              </article>
+            </div>  
+          </div>
         </div>
       </div>
     </section>
@@ -102,7 +144,13 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+  });
 </script>
+<!-- OWL CAROUSEL -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 
