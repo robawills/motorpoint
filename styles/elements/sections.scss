@@ -29,6 +29,13 @@
             padding-right: 65px;
         }
     }
+    
+    &--xlg {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+        overflow: hidden;
+    }
 }
 
 .mp-container h1 {

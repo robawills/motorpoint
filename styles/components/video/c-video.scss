@@ -42,15 +42,17 @@
 
   &__compass {
     position: absolute;
-    top: -75px;
-    right: -75px;
-    width: 250px;
-    z-index: 99;
+    top: -50px;
+    right: -45px;
+    width: 240px;
+    animation-name: compassAni;
+    animation-duration: 2s;
   }
 }
 
-// .html5-video-container .ytp-gradient-top {
-//   display: none !important;
-// }
 
-
+@keyframes compassAni {
+  0% {transform: rotate(360deg);}
+  75% {transform: rotate(-30deg);}
+  100% {transform: rotate(0deg);}
+}
