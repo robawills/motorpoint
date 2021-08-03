@@ -31,25 +31,20 @@
             position: relative;
 
             &::before {
-                content: "";
+                content: url(https://motorpoint.rawills.co.uk/images/campaign/top-corner.svg);
                 position: absolute;
-                top: -30px;
-                left: -30px;
+                top: -50px;
+                left: -20px;
                 width: 60px;
-                height: 60px;
-                background-color: chartreuse;
-                opacity: 0.5;
+                height: auto;
             }
             
             &::after {
-                content: "";
+                content: url(https://motorpoint.rawills.co.uk/images/campaign/bottom-corner.svg);
                 position: absolute;
                 bottom: -30px;
-                right: -30px;
-                width: 60px;
-                height: 60px;
-                background-color: chartreuse;
-                opacity: 0.5;
+                right: -20px;
+                width: 45px;
             }
         }
     }
