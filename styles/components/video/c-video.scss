@@ -1,0 +1,56 @@
+.c-video {
+  position: relative;
+  background-color: #004996;
+  overflow: hidden;
+  padding: 4rem 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8rem;
+    left: -10%;
+    right: -10%;
+    height: 22rem;
+    background-color: #469AD6;
+    transform: rotate(-4deg);
+  }
+
+  &__wrap {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    position: relative;
+  }
+  
+  &__embed {
+    position: relative; 
+    padding-bottom: 56.25%; 
+    padding-top: 0; 
+    height: 0; 
+    overflow: hidden;
+
+    iframe, 
+    object, 
+    embed { 
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%; 
+    }
+  }
+
+  &__compass {
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    width: 250px;
+    z-index: 99;
+  }
+}
+
+// .html5-video-container .ytp-gradient-top {
+//   display: none !important;
+// }
+
+
