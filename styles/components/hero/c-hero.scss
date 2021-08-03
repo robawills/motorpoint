@@ -26,29 +26,31 @@
         font-size: 70px;
         font-weight: bold;
         text-transform: uppercase;
-    }
 
-    &__corners {
-        &::before {
-            content: "";
-            position: absolute;
-            top: -50px;
-            left: 20px;
-            width: 60px;
-            height: 60px;
-            background-color: chartreuse;
-            opacity: 0.5;
-        }
-        
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: -50px;
-            right: 20px;
-            width: 60px;
-            height: 60px;
-            background-color: chartreuse;
-            opacity: 0.5;
+        &--corners {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -30px;
+                left: -30px;
+                width: 60px;
+                height: 60px;
+                background-color: chartreuse;
+                opacity: 0.5;
+            }
+            
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -30px;
+                right: -30px;
+                width: 60px;
+                height: 60px;
+                background-color: chartreuse;
+                opacity: 0.5;
+            }
         }
     }
 
