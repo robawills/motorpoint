@@ -1,6 +1,6 @@
 .c-video {
   position: relative;
-  background-color: #004996;
+  background-color: var(--blue-2);
   overflow: hidden;
   padding: 4rem 0 0;
 
@@ -11,7 +11,7 @@
     left: -10%;
     right: -10%;
     height: 22rem;
-    background-color: #469AD6;
+    background-color: var(--light-blue);
     transform: rotate(-4deg);
   }
 

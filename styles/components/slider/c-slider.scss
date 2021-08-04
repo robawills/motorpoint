@@ -1,8 +1,9 @@
 .c-slider {
   position: relative;
   width: 100%;
-  background-color: #004287;
+  background-color: var(--blue-3);
   overflow: hidden;
+  padding-bottom: 100px;
 
   &::before {
     content: "";
@@ -11,7 +12,7 @@
     left: -10%;
     right: -10%;
     height: 15rem;
-    background-color: #004996;
+    background-color: var(--blue-2);
     transform: rotate(-4deg);
   }
 
@@ -21,65 +22,6 @@
     top: 0;
     left: 0;
     height: auto;
-  }
-
-  &__title {
-    width: 100%;
-    padding: 100px 0;
-    text-align: center;
-    position: relative;
-  }
-
-  &__titleBlock {
-    display: inline;
-    padding: 20px 40px;
-    background-color: #FFC82E;
-    color: #000;
-    font-size: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-
-    &--lineTwo {
-      padding: 20px 40px;
-      font-size: 60px;
-    }
-
-    &--topRightCorners {
-      position: relative;
-
-      &::before {
-        content: url(https://motorpoint.rawills.co.uk/images/campaign/top-corner.svg);
-        position: absolute;
-        top: -20px;
-        right: -20px;
-        width: 40px;
-        height: auto;
-        transform: rotate(90deg);
-      }
-    }
-
-    &--bottomLeftCorners {
-      position: relative;
-
-      &::before {
-        content: url(https://motorpoint.rawills.co.uk/images/campaign/bottom-corner.svg);
-        position: absolute;
-        bottom: -30px;
-        left: -20px;
-        width: 45px;
-        transform: rotate(90deg);
-      }
-    }
-  }
-
-  &__titleOffSet {
-    transform: rotate(-2.4deg);
-    margin:100px 0 20px;
-
-    &--lineTwo {
-      transform: rotate(0.4deg);
-      margin: 0;
-    }
   }
 
   &__carousel {

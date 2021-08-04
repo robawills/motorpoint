@@ -1,0 +1,31 @@
+.c-straightTo {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--blue-2);
+  color: var(--white);
+  height: 50rem;
+  padding: 100px 0 800px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8rem;
+    left: -10%;
+    right: -10%;
+    height: 15rem;
+    background-color: var(--blue-3);
+    transform: rotate(-4deg);
+  }
+
+  &__insetWrap {
+    padding: 0 40px;
+  }
+
+  &__imgFull {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 50vw;
+  }
+}
