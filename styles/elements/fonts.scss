@@ -6,7 +6,7 @@ p, .p {
 
 
     &--white {
-        color: white;
+        color: rgba(255, 255, 255, 0.85);
     }
     
     &--centered {
@@ -16,9 +16,6 @@ p, .p {
     &--spaceTopLarge {
         margin: 80px 0 0;
     }
-
-
-
 
     @media (min-width: 768px) {
         margin-bottom: var(--padding-xs);

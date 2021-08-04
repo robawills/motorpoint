@@ -20,10 +20,6 @@
 
 @import 'helpers/text/h-text';
 
-
-@import 'components/links/c-links';
-@import 'components/button/c-button';
-
 @import 'components/list/c-list';
 
 @import 'components/intro/c-intro';
@@ -41,8 +37,12 @@
 
 @import 'components/find-car/c-find-car';
 
+@import 'components/block-title/c-blockTitle';
+@import 'components/links/c-links';
+@import 'components/button/c-button';
 @import 'components/hero/c-hero';
 @import 'components/video/c-video';
 @import 'components/slider/c-slider';
+@import 'components/straight-to/c-straightTo';
 
 
