@@ -21,6 +21,17 @@
             filter: brightness(110%);
         }
     }
+
+    &--whiteNarrow {
+        background-color: var(--white);
+        color: #111C2E;
+        font-weight: 600;
+
+        &:hover, &:focus {
+            filter: brightness(90%);
+        }
+    }
+
     &--white {
         width: 100%;
         margin-bottom: var(--padding-xs);
