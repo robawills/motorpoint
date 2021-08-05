@@ -3,8 +3,19 @@
   overflow: hidden;
   background-color: var(--blue-2);
   color: var(--white);
-  height: 50rem;
-  padding: 100px 0 800px;
+  padding: 100px 0 340px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: 1600px) {
+    padding-bottom: 250px;
+  }
+
+  @media (min-width: 2000px) {
+    padding-bottom: 500px;
+  }
 
   &::before {
     content: "";
@@ -18,14 +29,31 @@
   }
 
   &__insetWrap {
-    padding: 0 40px;
+    padding: 0;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left;
+      padding: 0 40px;
+    }
   }
 
   &__imgFull {
     position: absolute;
-    top: 0;
+    top: 40px;
     left: 0;
     height: auto;
-    width: 50vw;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      top: 0;
+      width: 50vw;
+    }
+  }
+
+  &__socialWrap {
+    width: 100%;
+    height: 20rem;
+    background-color: red;
   }
 }

@@ -42,24 +42,24 @@
   <div class="mp-container">
 
     <section class="c-hero">
-      <div class="container  container--lg" data-aos="fade-up" data-aos-once="true">
-        <div class="row">
+      <div class="container  container--lg">
+        <div class="row h-marginLR">
           <div class="col">
-            <h1 class="c-hero__signpost">
+            <h1 class="c-hero__signpost" data-aos="fade-up" data-aos-delay="100">
               GET STRAIGHT TO MOTORPOINT
             </h1>
-            <div class="c-blockTitle c-blockTitle--center">
+            <div class="c-blockTitle c-blockTitle--mobileMT" data-aos="fade-up" data-aos-delay="100">
               <div class="c-blockTitle__wrap">
                 <h2 class="c-blockTitle__headline c-blockTitle__cornerTop c-blockTitle__cornerBottom">Sorcerer's sunroof…</h2>
               </div>
-              <div class="c-blockTitle__wrap c-blockTitle__wrap--offSet-1-7">
+              <div class="c-blockTitle__wrap c-blockTitle__wrap--rotateLg">
                 <h2 class="c-blockTitle__headline">call off the quest!</h2>
               </div>
             </div>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col  col-md-10 ">
+        <div class="row h-marginLR justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col  col-md-11 col-xl-10">
             <p class="p p--white p--centered p--spaceTopLarge">Gone are the days of endlessly visiting car dealership after car dealership, navigating the maze of pushy sales people and hunting out the best value cars. If a large choice of cars at unbeatable prices without the headache is what you are looking for, get straight to Motorpoint.</p>
           </div>
         </div>
@@ -70,19 +70,21 @@
 
     <section class="c-video">
       <div class="container  container--lg">
-        <div class="row">
-          <div class="col c-video__wrap">
-            <div class="c-video__embed" data-aos="zoom-in-up" data-aos-duration="500" data-aos-delay="200" data-aos-once="true">
-              <iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/WGwYuijfuto??loop=1&iv_load_policy=3" frameborder="0" allowfullscreen ></iframe>
+        <div class="row h-marginLR">
+          <div class="col c-video__wrap" data-aos="fade-up" data-aos-delay="400">
+            <div class="c-video__embed" >
+              <iframe id="ytplayer" type="text/html" width="560" height="313" src="https://www.youtube.com/embed/HpOnM-Rrgug??loop=1&iv_load_policy=3" frameborder="0" allowfullscreen ></iframe>
             </div>
-            <div class="c-video__compass">
-              <img src="./images/campaign/compass.svg" width="240" height="auto" alt="Motorpoint-Compass"/>
+            <div class="c-video__compassWrap">
+              <img class="c-video__compass" src="./images/campaign/compass.svg" width="240" height="auto" alt="Motorpoint-Compass"/>
             </div>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row h-marginLR justify-content-center">
           <div class="col col-md-10">
-            <p class="p p--white p--centered p--spaceTopLarge" data-aos="fade-up" data-aos-once="true">All cars are checked by experts and under warranty, with the option of Home Delivery or Same Day Driveaway. Our award-winning customer service team is available to help you find your perfect car, and what’s more we give you 14 days to make sure you love your new car or get your money back.</p>
+            <p class="p p--white p--centered p--spaceTopLarge" data-aos="fade-up">
+              All cars are checked by experts and under warranty, with the option of Home Delivery or Same Day Driveaway. Our award-winning customer service team is available to help you find your perfect car, and what’s more we give you 14 days to make sure you love your new car or get your money back.
+            </p>
           </div>
         </div>
       </div>
@@ -91,52 +93,77 @@
     <!-- CAR SLIDER -->
 
     <section class="c-slider">
+      <div class="c-slider__pathImage">
+        <img src="./images/campaign/path-1.svg" width="100%" height="auto" />
+      </div>
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="c-blockTitle c-blockTitle--center c-blockTitle--pLarge" data-aos="fade-up" data-aos-once="true">
-              <div class="c-blockTitle__wrap c-blockTitle__wrap--offSet-2 c-blockTitle__wrap--mLarge">
-                <h2 class="c-blockTitle__headline c-blockTitle__headline--xs c-blockTitle__cornerTop c-blockTitle__cornerTop--xs">Holy wing-mirrors!</h2>
-              </div>
-              <div class="c-blockTitle__wrap c-blockTitle__wrap--offSet04">
-                <h2 class="c-blockTitle__headline c-blockTitle__headline--md c-blockTitle__cornerBottom c-blockTitle__cornerBottom--xs">There’s even more.</h2>
-              </div>
-            </div>
+        <div class="c-blockTitle c-blockTitle--pLarge" data-aos="fade-up">
+          <div class="c-blockTitle__wrap c-blockTitle__wrap--rotateXl">
+            <h2 class="c-blockTitle__headline c-blockTitle__headline--xs c-blockTitle__cornerTop c-blockTitle__cornerTop--xs">Holy wing-mirrors!</h2>
+          </div>
+          <div class="c-blockTitle__wrap c-blockTitle__wrap--rotateSm">
+            <h2 class="c-blockTitle__headline c-blockTitle__headline--md c-blockTitle__cornerBottom c-blockTitle__cornerBottom--xs">There’s even more.</h2>
           </div>
         </div>
       </div>
       <div class="container  container--xlg">
         <div class="c-slider__container">
-          <div class="owl-carousel owl-theme c-slider__carousel" data-aos="fade-up" data-aos-once="true">
+          <div class="owl-carousel owl-theme c-slider__carousel" data-aos="fade-up">
             <div>
-              <article class="c-slider__slide c-slider__slide--rotate5">
-                <figure class="c-slider__slideImage"></figure>
-                <h1 class="c-slider__slideTitle">Premium</h1>
-              </article>
+              <a href="#" class="c-slider__link">
+                <article class="c-slider__slide c-slider__slide--rotateLg">
+                  <figure class="c-slider__slideImage">
+                    <img src="./images/campaign/car-2/car-2.jpg" srcset="./images/campaign/car-2/car-2@2x.jpg 2x, ./images/campaign/car-2/car-2@3x.jpg 3x" width="389" height="481" alt="Convertible Cars"/>
+                  </figure>
+                  <h1 class="c-slider__slideTitle">Convertible</h1>
+                </article>
+              </a>
             </div>
             <div>
-              <article class="c-slider__slide c-slider__slide--rotate-4">
-                <figure class="c-slider__slideImage"></figure>
-                <h1 class="c-slider__slideTitle">Affordable</h1>
-              </article>
+              <a href="#" class="c-slider__link">
+                <article class="c-slider__slide c-slider__slide--rotateLg">
+                  <figure class="c-slider__slideImage">
+                    <img src="./images/campaign/car-3/car-3.jpg" srcset="./images/campaign/car-3/car-3@2x.jpg 2x, ./images/campaign/car-3/car-3@3x.jpg 3x" width="389" height="481" alt="Premium Cars"/>
+                  </figure>
+                  <h1 class="c-slider__slideTitle">Premium</h1>
+                </article>
+              </a>
             </div>
             <div>
-              <article class="c-slider__slide c-slider__slide--rotate-2">
-                <figure class="c-slider__slideImage"></figure>
-                <h1 class="c-slider__slideTitle">Economical</h1>
-              </article>
+              <a href="#" class="c-slider__link">
+                <article class="c-slider__slide c-slider__slide--rotateXs">
+                  <figure class="c-slider__slideImage">
+                    <img src="./images/campaign/car-1/car-1.jpg" srcset="./images/campaign/car-1/car-1@2x.jpg 2x, ./images/campaign/car-1/car-1@3x.jpg 3x" width="389" height="481" alt="Affordable Cars"/>
+                  </figure>
+                  <h1 class="c-slider__slideTitle">Affordable</h1>
+                </article>
+              </a>
             </div>
             <div>
-              <article class="c-slider__slide c-slider__slide--rotate4">
-                <figure class="c-slider__slideImage"></figure>
-                <h1 class="c-slider__slideTitle">Family</h1>
-              </article>
+              <a href="#" class="c-slider__link">
+                <article class="c-slider__slide c-slider__slide--rotateSm">
+                  <figure class="c-slider__slideImage">
+                    <img src="./images/campaign/car-4/car-4.jpg" srcset="./images/campaign/car-4/car-4@2x.jpg 2x, ./images/campaign/car-4/car-4@3x.jpg 3x" width="389" height="481" alt="Economical Cars"/>
+                  </figure>
+                  <h1 class="c-slider__slideTitle">Economical</h1>
+                </article>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="c-slider__link">
+                <article class="c-slider__slide c-slider__slide--rotateMd">
+                  <figure class="c-slider__slideImage">
+                    <img src="./images/campaign/car-5/car-5.jpg" srcset="./images/campaign/car-5/car-5@2x.jpg 2x, ./images/campaign/car-5/car-5@3x.jpg 3x" width="389" height="481" alt="Family Cars"/>
+                  </figure>
+                  <h1 class="c-slider__slideTitle">Family</h1>
+                </article>
+              </a>
             </div>  
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row h-marginLR justify-content-center">
           <div class="col col-md-auto">
             <a class="c-link" href="#">
               <button class="btn c-button c-button--whiteNarrow" type="button">
@@ -152,18 +179,18 @@
 
     <section class="c-straightTo">
       <div class="container  container--lg">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="c-blockTitle c-blockTitle--mB">
-              <div class="c-blockTitle__wrap c-blockTitle__wrap--offSet-08">
-                <h2 class="c-blockTitle__headline c-blockTitle__headline--p25 c-blockTitle__headline--xs c-blockTitle__cornerTop c-blockTitle__cornerTop--xs">Get straight to</h2>
+        <div class="row h-marginLR">
+          <div class="col-12 col-md-8 col-xl-6">
+            <div class="c-blockTitle c-blockTitle--alignLeft c-blockTitle--mB">
+              <div class="c-blockTitle__wrap c-blockTitle__wrap--rotateMd">
+                <h2 class="c-blockTitle__headline c-blockTitle__headline--pLarge c-blockTitle__headline--xs c-blockTitle__cornerTop c-blockTitle__cornerTop--xs">Get straight to</h2>
               </div>
-              <div class="c-blockTitle__wrap c-blockTitle__wrap--offSet-2">
-                <h2 class="c-blockTitle__headline c-blockTitle__headline--p25 c-blockTitle__headline--md c-blockTitle__cornerBottom c-blockTitle__cornerBottom--xs">Motorpoint</h2>
+              <div class="c-blockTitle__wrap c-blockTitle__wrap--rotateXl">
+                <h2 class="c-blockTitle__headline c-blockTitle__headline--pLarge c-blockTitle__headline--md c-blockTitle__cornerBottom c-blockTitle__cornerBottom--xs">Motorpoint</h2>
               </div>
             </div>
             <div class="c-straightTo__insetWrap">
-              <p class="p p--white p--inSet">Avoid the endless journey of buying a car and get straight to Motorpoint. We’re confident we’ll find the right car for you, whether you visit us in store, or browse online at your leisure.</p>
+              <p class="p p--white p--inSet p--pBLarge">Avoid the endless journey of buying a car and get straight to Motorpoint. We’re confident we’ll find the right car for you, whether you visit us in store, or browse online at your leisure.</p>
               <a class="c-link" href="#">
                 <button class="btn c-button c-button--whiteNarrow" type="button">
                   View all vehicles
@@ -171,7 +198,7 @@
               </a>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-4 col-xl-6">
             <div class="c-straightTo__imgFull">
               <img src="./images/campaign/woman-with-car-keys.png" width="100%" height="auto" />
             </div>
@@ -185,7 +212,7 @@
 
     <!-- <section class="c-video">
       <div class="container  container--lg">
-        <div class="row ">
+        <div class="row h-marginLR ">
           <div class="col">
             <script src="//motorpoint-mail.com/resources/sharing/embed.js?sharing=lp-embed&domain=motorpoint-mail.com&id=2KCU-4B2%2Fsign-up-to-our-emails-to-get-the-latest-updates-on-our-car-s-and-services-delivered-straight-to-your-inbox%22"></script>
           </div>
@@ -204,19 +231,21 @@
 <!-- AOS animation -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init();
+  AOS.init({
+    once: true,
+  });
 
   $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
       autoplay: false,
-      autoplayTimeout: 5000,
+      autoplayTimeout: 10000,
       autoplayHoverPause: true,
       loop: true,
       margin: 50,
       responsiveClass: true,
       nav: true,
       loop: true,
-      stagePadding: 100,
+      stagePadding: 70,
       dots: false,
       navigation : false,
       center: true,
@@ -224,14 +253,19 @@
         0: {
           items: 1
         },
-        568: {
+        400: {
           items: 2
         },
-        600: {
-          items: 3
+        1000: {
+          items: 3,
+          stagePadding: 100,
         },
-        1600: {
-          stagePadding: 200
+        1500: {
+          stagePadding: 200,
+        },
+        1800: {
+          stagePadding: 200,
+          items: 4
         }
       }
     })

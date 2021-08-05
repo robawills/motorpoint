@@ -2,30 +2,53 @@
   position: relative;
   background-color: var(--blue-2);
   overflow: hidden;
-  padding: 4rem 0 0;
+  padding: 30px 0 0;
+
+  @media (min-width: 768px) {
+    padding: 60px 0 0;
+  }
 
   &::before {
     content: "";
     position: absolute;
-    top: -8rem;
+    top: -20px;
     left: -10%;
     right: -10%;
-    height: 22rem;
+    height: 150px;
     background-color: var(--light-blue);
     transform: rotate(-4deg);
+
+    @media (min-width: 768px) {
+      top: -50px;
+      height: 300px;
+    }
+
+    @media (min-width: 1025px) {
+      top: -150px;
+      height: 400px;
+    }
   }
 
   &__wrap {
     width: 100%;
-    padding: 15px;
+    padding: 10px;
+    margin: 0 20px;
     background-color: white;
     position: relative;
     filter: drop-shadow(0px 19px 38px rgba(0, 0, 0, 0.18));
+
+    @media (min-width: 768px) {
+      padding: 15px;
+    }
+
+    @media (min-width: 1025px) {
+      margin: 0;
+    }
   }
   
   &__embed {
     position: relative; 
-    padding-bottom: 56.25%; 
+    padding-bottom: 41.8%; 
     padding-top: 0; 
     height: 0; 
     overflow: hidden;
@@ -41,13 +64,30 @@
     }
   }
 
+  &__compassWrap {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 100px;
+      right: -120px;
+      width: 220px;
+      animation-name: compassAni;
+      animation-duration: 2s;
+    }
+
+    @media (min-width: 1025px) {
+      top: -50px;
+      right: -50px;
+      width: 240px;
+    }
+  }
+
   &__compass {
-    position: absolute;
-    top: -50px;
-    right: -45px;
-    width: 240px;
-    animation-name: compassAni;
-    animation-duration: 2s;
+    width: 100%;
+    height: auto;
+    vertical-align: top;
   }
 }
 
