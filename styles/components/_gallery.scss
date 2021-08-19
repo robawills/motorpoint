@@ -93,6 +93,7 @@
   &__listItem {
     width: 100%;
     transform: rotate(-2deg);
+    transition: all 0.3s;
     margin-top: 25px;
 
     &:nth-of-type(even) {
@@ -117,6 +118,11 @@
 
       &:nth-of-type(5n) {
         transform: rotate(-3deg);
+      }
+
+      &:focus,
+      &:hover {
+        transform: rotate(0);
       }
     }
   }

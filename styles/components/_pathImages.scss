@@ -5,6 +5,7 @@
   width: 12vw;
   height: auto;
   z-index: 4;
+  pointer-events: none;
 
   &--alignBottom {
     top: unset;

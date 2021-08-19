@@ -26,23 +26,6 @@
     <!--  Title Element  -->
     <title>Motorpoint Campaign</title>
 
-    <!-- AOS animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- OWL CAROUSEL -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -51,12 +34,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles/style.css" />
+
+    <script src="scripts/application/application.min.js" defer></script>
   </head>
 
   <body>
     <div class="generic-page page-content main-container">
       <div class="mp-container">
-        <section class="c-hero">
+        <div class="c-hero">
           <div class="container" data-aos="zoom-in-custom">
             <div class="row u-marginLR-0">
               <div class="col">
@@ -84,11 +69,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        <!-- VIDEO SECTION -->
+        <!-- VIDEO div -->
 
-        <section class="c-video">
+        <div class="c-video">
           <div class="container">
             <div class="row u-marginLR-0">
               <div
@@ -106,7 +91,7 @@
                 <div class="c-video__compassWrap">
                   <img
                     class="c-video__compass"
-                    src="https://motorpoint.rawills.co.uk/images/campaign/compass.svg"
+                    src="./images/campaign/compass.svg"
                     width="240"
                     height="auto"
                     alt="Motorpoint-Compass"
@@ -126,11 +111,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        <!-- CHARACTERS SECTION -->
+        <!-- CHARACTERS div -->
 
-        <section class="c-characters">
+        <div class="c-characters">
           <figure
             class="c-characters__imageWrap"
             data-aos="fade-right"
@@ -201,9 +186,9 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        <section class="c-characters c-characters--sectionTwo">
+        <div class="c-characters c-characters--sectionTwo">
           <figure
             class="c-characters__imageWrap"
             data-aos="fade-left"
@@ -265,11 +250,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <!-- CAR SLIDER -->
 
-        <section class="c-slider">
+        <div class="c-slider">
           <div class="c-pathImage">
             <img
               src="./images/campaign/paths/path-2.svg"
@@ -471,11 +456,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <!-- VIDEO GALLERY -->
 
-        <section class="c-gallery">
+        <div class="c-gallery">
           <div class="container">
             <div class="row">
               <div class="col-12">
@@ -601,10 +586,10 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <!--MAP DETAILS-->
-        <section class="c-map">
+        <div class="c-map">
           <div class="c-pathImage c-pathImage--mapPath">
             <img
               src="./images/campaign/paths/path-4.svg"
@@ -651,11 +636,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <!--MAP IMAGE-->
 
-        <section class="c-map c-map--mapImage">
+        <div class="c-map c-map--mapImage">
           <div class="container">
             <div class="row">
               <div class="col-12">
@@ -670,11 +655,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <!-- KEEP UP TO DATE -->
 
-        <section class="c-keepUpToDate">
+        <div class="c-keepUpToDate">
           <div class="c-pathImage c-pathImage--keepUpToDatePath">
             <img
               src="./images/campaign/paths/path-5.svg"
@@ -722,11 +707,11 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <!--GET STRAIGHT TO MOTORPOINT-->
 
-        <section class="c-straightTo">
+        <div class="c-straightTo">
           <div class="container">
             <div class="row u-marginLR-0">
               <div class="col-12 col-md-7 col-xl-6">
@@ -822,7 +807,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <!--VIDEO MODALS-->
 
@@ -971,70 +956,15 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <!-- AOS animation -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- FEEFO -->
     <script
       type="text/javascript"
       src="https://api.feefo.com/api/javascript/motorpoint"
       async
     ></script>
-    <!-- OWL CAROUSEL -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- CUSTOM JS -->
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          autoplay: false,
-          autoplayTimeout: 10000,
-          autoplayHoverPause: true,
-          loop: true,
-          margin: 50,
-          responsiveClass: true,
-          nav: false,
-          loop: true,
-          stagePadding: 70,
-          dots: false,
-          navigation: false,
-          center: true,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 1,
-              stagePadding: 300,
-            },
-            1000: {
-              items: 3,
-              stagePadding: 100,
-            },
-            1500: {
-              stagePadding: 200,
-            },
-            1800: {
-              stagePadding: 200,
-              items: 4,
-            },
-          },
-        });
-
-        AOS.init({ once: true, duration: 600 });
-      });
-    </script>
   </body>
 </html>

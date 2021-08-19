@@ -41,5 +41,9 @@
     "watch:js": "rollup --config --watch",
     "watch": "run-p 'serve' 'watch:css' 'watch:js'",
     "start": "npm run watch"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "owl.carousel": "^2.3.4"
   }
 }

@@ -7,6 +7,8 @@
 @import "global";
 @import "utils/overrides";
 @import "utils/type";
+@import "vendor/aos";
+@import "vendor/owl";
 @import "elements/elements";
 @import "elements/sections";
 @import "elements/fonts";
@@ -24,4 +26,3 @@
 @import "components/modal";
 @import "components/keepUpToDate";
 @import "components/pathImages";
-@import "components/aosAnimation";
