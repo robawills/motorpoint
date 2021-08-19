@@ -1,0 +1,32 @@
+.u-h1 {
+  font-size: 30px;
+  margin-bottom: var(--padding-sm);
+
+  @media (min-width: 768px) {
+    margin-bottom: var(--padding-xs);
+  }
+
+  @media (min-width: 1025px) {
+    margin-bottom: var(--padding-sm);
+  }
+}
+
+.u-h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: 700 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+  @media (min-width: 1025px) {
+    margin-bottom: 25px;
+  }
+}
+
+.u-bold {
+  font-weight: bold;
+}
+
+.u-light {
+  font-weight: normal !important;
+}

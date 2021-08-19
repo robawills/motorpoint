@@ -1,0 +1,101 @@
+.c-video {
+  position: relative;
+  background-color: var(--blue-2);
+  overflow: hidden;
+  padding: 30px 0 0;
+
+  @media (min-width: 768px) {
+    padding: 60px 0 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -10%;
+    right: -10%;
+    height: 150px;
+    background-color: var(--light-blue);
+    transform: rotate(-4deg);
+
+    @media (min-width: 768px) {
+      top: -50px;
+      height: 300px;
+    }
+
+    @media (min-width: 1025px) {
+      top: -150px;
+      height: 400px;
+    }
+  }
+
+  &__wrap {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.18);
+
+    @media (min-width: 768px) {
+      padding: 15px;
+    }
+  }
+
+  &__embed {
+    position: relative;
+    padding-bottom: 41.8%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+
+    iframe,
+    object,
+    embed {
+      border: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__compassWrap {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 100px;
+      right: -120px;
+      width: 220px;
+      animation-name: compassAni;
+      animation-duration: 2s;
+      animation-delay: 0.3s;
+    }
+
+    @media (min-width: 1025px) {
+      top: -50px;
+      right: -50px;
+      width: 240px;
+    }
+  }
+
+  &__compass {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+}
+
+@keyframes compassAni {
+  0% {
+    transform: rotate(360deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

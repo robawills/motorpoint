@@ -1,0 +1,42 @@
+.c-textBlock {
+  color: rgba(255, 255, 255, 0.85);
+  padding-bottom: 0;
+  margin: 30px 0;
+
+  @media (min-width: 768px) {
+    margin: 40px 0 20px;
+  }
+
+  @media (min-width: 1025px) {
+    margin: 80px 0 40px;
+  }
+
+  &--marginBottomMd {
+    margin: 30px 0;
+
+    @media (min-width: 768px) {
+      margin: 40px 0;
+    }
+
+    @media (min-width: 1025px) {
+      margin: 60px 0;
+    }
+  }
+
+  &--spaceingSm {
+    padding: 0;
+    margin: 0 0 40px;
+
+    @media (min-width: 768px) {
+      margin: 40px 0;
+    }
+  }
+
+  &--spacingBottomSm {
+    margin: 0 0 40px;
+  }
+
+  &--centered {
+    text-align: center;
+  }
+}

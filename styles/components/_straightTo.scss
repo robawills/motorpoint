@@ -1,0 +1,94 @@
+.c-straightTo {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--blue-2);
+  color: var(--white);
+  padding: 100px 0 300px;
+
+  @media (min-width: 350px) {
+    padding-bottom: 400px;
+  }
+
+  @media (min-width: 500px) {
+    padding-bottom: 700px;
+  }
+
+  @media (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: 1600px) {
+    padding-bottom: 250px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8rem;
+    left: -10%;
+    right: -10%;
+    height: 15rem;
+    background-color: var(--blue-3);
+    transform: rotate(-4deg);
+  }
+
+  &__insetWrap {
+    padding: 0;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: start;
+      padding: 0 30px;
+    }
+  }
+
+  &__imgFull {
+    position: absolute;
+    top: 50px;
+    right: -20px;
+    height: auto;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 50vw;
+      top: unset;
+      bottom: 0;
+      right: unset;
+    }
+  }
+
+  &__socialList {
+    list-style: none;
+    margin: 65px 0;
+    padding: 0;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    @media (min-width: 1025px) {
+      display: block;
+      margin: 100px 0 50px;
+    }
+
+    @media (min-width: 2200px) {
+      display: block;
+      margin: 100px 0 150px;
+    }
+  }
+
+  &__socialListItem {
+    display: inline-block;
+    margin: 0 10px;
+
+    @media (min-width: 1025px) {
+      margin-right: 20px;
+      margin-left: 0;
+    }
+  }
+
+  &__socialIcon {
+    max-width: 50px;
+  }
+}

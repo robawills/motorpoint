@@ -4,43 +4,24 @@
     Import the Neue Kit framework, all settings, configurable mixins & theme.
 \*----------------------------------------------------------------------------*/
 
-// @import '../node_modules/@neuekit/neuekit/src/styles/settings';
-// @import 'application/settings';
-
-// @import '../node_modules/@neuekit/neuekit/src/styles/neuekit';
-// @import 'application/neuekit';
-// @import 'application/application';
-
-
-@import 'global';
-
-@import 'elements/elements';
-@import 'elements/sections';
-@import 'elements/fonts';
-
-@import 'helpers/text/h-text';
-
-@import 'components/list/c-list';
-
-@import 'components/intro/c-intro';
-
-@import 'components/img-animate/c-img-animate';
-@import 'components/text-img/c-text-img';
-
-@import 'components/pros/c-pros';
-
-@import 'components/options/c-options';
-@import 'components/options/c-options-card';
-@import 'components/options/c-options-table';
-
-@import 'components/question-answer/c-question-answer';
-
-@import 'components/find-car/c-find-car';
-
-@import 'components/block-title/c-blockTitle';
-@import 'components/links/c-links';
-@import 'components/button/c-button';
-@import 'components/hero/c-hero';
-@import 'components/video/c-video';
-@import 'components/slider/c-slider';
-@import 'components/straight-to/c-straightTo';
+@import "global";
+@import "utils/overrides";
+@import "utils/type";
+@import "elements/elements";
+@import "elements/sections";
+@import "elements/fonts";
+@import "components/blockTitle";
+@import "components/links";
+@import "components/button";
+@import "components/hero";
+@import "components/video";
+@import "components/slider";
+@import "components/straightTo";
+@import "components/textBlock";
+@import "components/characters";
+@import "components/gallery";
+@import "components/map";
+@import "components/modal";
+@import "components/keepUpToDate";
+@import "components/pathImages";
+@import "components/aosAnimation";

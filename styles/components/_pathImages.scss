@@ -1,0 +1,48 @@
+.c-pathImage {
+  position: absolute;
+  top: -250px;
+  left: 0;
+  width: 12vw;
+  height: auto;
+  z-index: 4;
+
+  &--alignBottom {
+    top: unset;
+    left: unset;
+    right: 0;
+    bottom: -250px;
+    width: 15vw;
+  }
+
+  &--characterPath {
+    top: unset;
+    left: unset;
+    bottom: 0;
+    right: 0;
+    width: 12vw;
+  }
+
+  &--mapPath {
+    width: 100%;
+    top: -30vw;
+    z-index: unset;
+  }
+
+  &--keepUpToDatePath {
+    width: 20vw;
+    top: -30vw;
+    z-index: 2;
+  }
+
+  &--keepUpToDatePathBottom {
+    top: unset;
+    left: unset;
+    right: 0;
+    bottom: -120px;
+    width: 10vw;
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}

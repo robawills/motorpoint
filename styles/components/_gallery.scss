@@ -1,0 +1,141 @@
+.c-gallery {
+  position: relative;
+  background-color: var(--blue-3);
+  padding: 100px 0;
+  overflow: hidden;
+
+  @media (min-width: 1025px) {
+    padding: 100px 0 200px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: -20px;
+    right: -20px;
+    height: 125px;
+    background-color: var(--blue-2);
+    transform: rotate(-4deg);
+
+    @media (min-width: 768px) {
+      bottom: -50px;
+    }
+
+    @media (min-width: 1200px) {
+      bottom: -150px;
+      height: 250px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    left: -20px;
+    right: -20px;
+    height: 110px;
+    background-color: var(--blue-2);
+    transform: rotate(2deg);
+
+    @media (min-width: 768px) {
+      height: 170px;
+    }
+  }
+
+  &__headerWrap {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+
+  &__followButton {
+    @media (min-width: 1025px) {
+      display: none;
+    }
+
+    &--header {
+      display: none;
+
+      @media (min-width: 1025px) {
+        display: block;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      margin: 70px 0;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 50px;
+    }
+  }
+
+  &__listItem {
+    width: 100%;
+    transform: rotate(-2deg);
+    margin-top: 25px;
+
+    &:nth-of-type(even) {
+      transform: rotate(2deg);
+    }
+
+    &:nth-of-type(odd) {
+      transform: rotate(-1.5deg);
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 0;
+
+      &:nth-of-type(2n) {
+        transform: rotate(2deg);
+      }
+
+      &:nth-of-type(3n),
+      &:nth-of-type(4n) {
+        transform: rotate(-1.5deg);
+      }
+
+      &:nth-of-type(5n) {
+        transform: rotate(-3deg);
+      }
+    }
+  }
+
+  &__followButtonWrap {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 1025px) {
+      display: none;
+    }
+  }
+
+  &__modalOpenLink {
+    cursor: pointer;
+
+    &.is-disabled {
+      cursor: not-allowed;
+    }
+  }
+}

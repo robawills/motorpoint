@@ -1,0 +1,68 @@
+.c-map {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0 100px;
+  background-color: var(--blue-2);
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    left: -20px;
+    right: -20px;
+    height: 110px;
+    background-color: var(--blue-3);
+    transform: rotate(2deg);
+  }
+
+  @media (min-width: 768px) {
+    padding: 100px 0 0;
+    overflow: visible;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &--mapImage {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--blue-3);
+    padding: 50px 0 200px;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      left: -20px;
+      right: -20px;
+      height: 170px;
+      background-color: var(--blue-2);
+      transform: rotate(-3.4deg);
+
+      @media (min-width: 768px) {
+        display: unset;
+        height: 320px;
+      }
+
+      @media (min-width: 1200px) {
+        height: 380px;
+      }
+    }
+  }
+
+  &__details {
+    text-align: center;
+
+    @media (min-width: 1200px) {
+      text-align: start;
+      padding-left: 90px;
+      margin-bottom: 50px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+:root {
+  --offset: 75px;
+  --padding-xs: 20px;
+  --padding-sm: 35px;
+  --padding: 40px;
+  --padding-xl: 70px;
+
+  @media (min-width: 1025px) {
+    --padding: 70px;
+  }
+
+  --red: #eb3c32;
+  --orange: #e84910;
+  --blue: #004996;
+  --blue-2: #004996;
+  --blue-3: #004287;
+  --light-blue: #469ad6;
+  --dark-blue: #253858;
+  --off-white: #f5f7f8;
+  --green: #0cb4bd;
+  --light-gray: #e3e9ec;
+  --gray: #111c2e;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Graphik";
+  font-weight: 500;
+}

@@ -1,0 +1,15 @@
+p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: var(--padding-sm);
+
+  @media (min-width: 768px) {
+    margin-bottom: var(--padding-xs);
+  }
+
+  @media (min-width: 1025px) {
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
