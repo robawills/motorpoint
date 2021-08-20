@@ -82,10 +82,6 @@
     display: inline-block;
     margin: 0 10px;
 
-    &::before {
-      display: none !important;
-    }
-
     @media (min-width: 1025px) {
       margin-right: 20px;
       margin-left: 0;
