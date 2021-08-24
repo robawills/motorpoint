@@ -21,5 +21,3 @@ import aos from "./modules/aos.js";
 $(() => {
   aos();
 });
-
-console.log("New version");
