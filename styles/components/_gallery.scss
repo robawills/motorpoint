@@ -45,14 +45,14 @@
 
   &__headerWrap {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 
     @media (min-width: 768px) {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
-      margin-bottom: 50px;
+      margin-bottom: 100px;
     }
   }
 
