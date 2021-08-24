@@ -49,6 +49,7 @@
     color: var(--white);
     font-weight: 900;
     font-size: clamp(25px, 4vw, 48px);
+    font-family: Graphik Bold Web,Graphik Web,arial,sans serif;
 
     @media (min-width: 768px) {
       top: -50px;
