@@ -1,6 +1,10 @@
 .c-img-text {
     overflow: hidden;
 
+    &--mb-lg {
+        margin-bottom: calc(var(--padding) * 2);
+    }
+
     @media (max-width: 768px) {
         &__no-gutter {
             padding: 0;
